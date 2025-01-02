@@ -102,8 +102,8 @@ dnsutils
 linux-headers
 logrotate
 ntp
-upd72020x-fw
-wd719x-firmware
+#upd72020x-fw
+#wd719x-firmware
 wget
 
 ###video
@@ -140,7 +140,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
 networkmanager-qt5
-rtl8821cu-morrownr-dkms-git
+#rtl8821cu-morrownr-dkms-git
 
 ###file management
 gvfs
@@ -206,7 +206,7 @@ tar
 neovim
 fd
 gcc
-paru
+#paru
 
 ###########################################################################
 ####                           DISPLAY MANAGERS
@@ -219,9 +219,9 @@ sddm
 ####                       APPS
 ###########################################################################
 
-ast-firmware
-mkinitcpio-firmware
+#ast-firmware
+#mkinitcpio-firmware
 ripgrep
-ttf-ms-fonts
+#ttf-ms-fonts
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
