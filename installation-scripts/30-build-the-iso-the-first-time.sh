@@ -221,22 +221,6 @@ echo "Copying the new packages.x86_64 file to the build folder"
 cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
 echo
 
-if [ $chaoticsrepo == true ]; then
-  echo "Adding our chaotics repo to /etc/pacman.conf"
-  printf "\n" | sudo tee -a $buildFolder/archiso/pacman.conf
-  printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
-  cat chaotics-repo | sudo tee -a $buildFolder/archiso/pacman.conf
-  cat chaotics-repo | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
-fi
-
-if [ $chaoticsrepo == false ]; then
-  echo "Adding our chaotics repo to /etc/pacman.conf"
-  printf "\n" | sudo tee -a $buildFolder/archiso/pacman.conf
-  printf "\n" | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
-  cat no-chaotics-repo | sudo tee -a $buildFolder/archiso/pacman.conf
-  cat no-chaotics-repo | sudo tee -a $buildFolder/archiso/airootfs/etc/pacman.conf
-fi
-
 echo
 echo "Adding the content of the /personal folder"
 echo
