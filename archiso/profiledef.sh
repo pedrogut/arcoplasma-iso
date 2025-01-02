@@ -21,6 +21,7 @@ file_permissions=(
   ["/etc/shadow"]="0:0:600"
   ["/root"]="0:0:700"
   ["/root/.gnupg"]="0:0:700"
+  ["/root/.automated_script.sh"]="0:0:755"
   ["/etc/polkit-1/rules.d"]="0:0:750"
   ["/etc/sudoers.d"]="0:0:750"
 )
